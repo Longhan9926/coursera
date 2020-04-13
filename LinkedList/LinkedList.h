@@ -625,6 +625,14 @@ std::ostream& LinkedList<T>::print(std::ostream& os) const {
     cur = cur->next;
   }
 
+/*
+  Node* cur2 = tail_;
+  while (cur2) {
+    os << "(" << cur2->data << ")";
+    cur2 = cur2->prev;
+  }
+*/
+
   os << "]";
 
   return os;
